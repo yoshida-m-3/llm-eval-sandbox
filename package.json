@@ -7,7 +7,8 @@
     "rag:01": "tsx src/rag/01-chunk-size.ts",
     "rag:02": "tsx src/rag/02-semantic-chunking.ts",
     "rag:03": "tsx src/rag/03-parent-child.ts",
-    "rag:04": "tsx src/rag/04-top-k.ts"
+    "rag:04": "tsx src/rag/04-top-k.ts",
+    "rag:05": "tsx src/rag/05-multi-query.ts"
   },
   "keywords": [],
   "author": "",
