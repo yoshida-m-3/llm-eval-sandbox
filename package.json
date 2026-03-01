@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "LangChain エコシステム学習・検証プロジェクト",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "rag:01": "tsx src/rag/01-chunk-size.ts",
+    "rag:02": "tsx src/rag/02-semantic-chunking.ts",
+    "rag:03": "tsx src/rag/03-parent-child.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -15,6 +19,7 @@
   },
   "dependencies": {
     "@langchain/classic": "^1.0.21",
+    "@langchain/community": "^1.1.20",
     "@langchain/core": "^1.1.29",
     "@langchain/ollama": "^1.2.5",
     "@langchain/textsplitters": "^1.0.1",
