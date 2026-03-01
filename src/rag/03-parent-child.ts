@@ -4,35 +4,7 @@ import { ParentDocumentRetriever } from "@langchain/classic/retrievers/parent_do
 import { InMemoryStore } from "@langchain/core/stores";
 import { Document } from "@langchain/core/documents";
 import { embeddings, ragChain } from "./shared.js";
-
-// --- 検証用ドキュメント（01-chunk-size.ts と同一）---
-
-const document = `
-当社の経費精算規定について説明します。
-
-【出張日当】
-正社員の出張日当は1日あたり3,000円です。ただし、管理職の場合は1日あたり5,000円が支給されます。
-アルバイトスタッフには出張日当は支給されません。
-
-【交通費】
-正社員は交通費の実費精算が可能です。
-新幹線のグリーン車利用は管理職のみ認められています。
-アルバイトスタッフの交通費は1日あたり上限1,500円までの実費精算となります。
-
-【宿泊費】
-正社員の宿泊費の上限は1泊12,000円です。管理職の場合は1泊15,000円まで認められています。
-アルバイトスタッフの宿泊を伴う出張は原則として認められていません。ただし、事前に部長の承認を得た場合に限り、1泊8,000円を上限として認められます。
-
-【懇親会費用】
-正社員は1人あたり5,000円まで経費として申請できます。
-アルバイトスタッフは懇親会費用の経費申請はできません。ただし、歓送迎会の場合は雇用形態に関わらず1人あたり3,000円まで申請可能です。
-
-【申請方法】
-経費精算の締め日は毎月25日です。
-正社員は社内システムから申請してください。
-アルバイトスタッフは専用の紙の申請書を使用してください。
-領収書の原本添付が必須です。
-`;
+import { expensePolicy } from "./documents/expense-policy.js";
 
 // --- 質問 ---
 // Q1: 原則NGだが例外条件がある質問 → 小チャンクだと例外が欠落しやすい
@@ -79,7 +51,7 @@ const retriever = new ParentDocumentRetriever({
   parentK: 2,
 });
 
-const docs = [new Document({ pageContent: document })];
+const docs = [new Document({ pageContent: expensePolicy })];
 await retriever.addDocuments(docs);
 
 // 子チャンク（ベクトルストアに格納されたもの）を確認
@@ -92,7 +64,7 @@ allChildDocs.forEach((doc, i) => {
 });
 
 // 親チャンクの確認
-const parentChunks = await parentSplitter.createDocuments([document]);
+const parentChunks = await parentSplitter.createDocuments([expensePolicy]);
 console.log(`\n  親チャンク数: ${parentChunks.length}`);
 parentChunks.forEach((doc, i) => {
   const preview = doc.pageContent.replace(/\n/g, " ").trim().substring(0, 80);
@@ -106,7 +78,7 @@ parentChunks.forEach((doc, i) => {
 
 console.log("\n▶ B) 小チャンクのみ（ベースライン: 50文字）");
 
-const smallChunks = await childSplitter.createDocuments([document]);
+const smallChunks = await childSplitter.createDocuments([expensePolicy]);
 const smallVectorStore = await MemoryVectorStore.fromDocuments(
   smallChunks,
   embeddings,
