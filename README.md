@@ -39,5 +39,6 @@ LangChain.js で構築したチェーン/エージェントを Hono による RE
 
 ## 技術スタック
 
-- TypeScript
+- TypeScript / pnpm
 - LangChain.js / LangSmith / LangGraph.js / Hono / LangFlow
+- LLM: Ollama（ローカル） → Amazon Bedrock（クラウド）
