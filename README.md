@@ -7,8 +7,8 @@ LangChain エコシステム（Langシリーズ）を段階的に学習・検証
 ### Milestone 1: LangChain + LangSmith
 LLMアプリケーション構築の基盤となるLangChainの基本概念（プロンプト、チェーン、ツール連携）を習得し、LangSmithによるトレース・デバッグ環境を整える。
 
-- [ ] LangChain の環境構築
-- [ ] 基本的なチェーンの構築（プロンプトテンプレート、LLM呼び出し）
+- [x] LangChain の環境構築
+- [x] 基本的なチェーンの構築（プロンプトテンプレート、LLM呼び出し）
 - [ ] ツール連携とRetrieval-Augmented Generation (RAG) の実装
 - [ ] LangSmith のセットアップとトレース可視化
 - [ ] LangSmith による評価・デバッグの実践

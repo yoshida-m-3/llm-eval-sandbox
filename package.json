@@ -4,7 +4,9 @@
   "description": "LangChain エコシステム学習・検証プロジェクト",
   "type": "module",
   "scripts": {
-    "dev": "tsx src/index.ts"
+    "01": "tsx src/01-basic-invoke.ts",
+    "02": "tsx src/02-prompt-template.ts",
+    "03": "tsx src/03-chain.ts"
   },
   "keywords": [],
   "author": "",
