@@ -6,7 +6,9 @@
   "scripts": {
     "01": "tsx src/01-basic-invoke.ts",
     "02": "tsx src/02-prompt-template.ts",
-    "03": "tsx src/03-chain.ts"
+    "03": "tsx src/03-chain.ts",
+    "04": "tsx src/04-tool.ts",
+    "05": "tsx src/05-rag.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,8 +20,11 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@langchain/classic": "^1.0.21",
     "@langchain/core": "^1.1.29",
     "@langchain/ollama": "^1.2.5",
-    "langchain": "^1.2.28"
+    "@langchain/textsplitters": "^1.0.1",
+    "langchain": "^1.2.28",
+    "zod": "^4.3.6"
   }
 }
