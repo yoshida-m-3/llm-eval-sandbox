@@ -14,7 +14,8 @@
     "rag:08": "tsx src/rag/08-map-reduce.ts",
     "rag:09": "tsx src/rag/09-refine.ts",
     "trace:06": "tsx --env-file=.env src/06-langsmith-tracing.ts",
-    "eval:07": "tsx --env-file=.env src/07-langsmith-eval.ts"
+    "eval:07": "tsx --env-file=.env src/07-langsmith-eval.ts",
+    "graph:08": "tsx src/08-langgraph-basics.ts"
   },
   "keywords": [],
   "author": "",
@@ -29,6 +30,7 @@
     "@langchain/classic": "^1.0.21",
     "@langchain/community": "^1.1.20",
     "@langchain/core": "^1.1.29",
+    "@langchain/langgraph": "^1.2.0",
     "@langchain/ollama": "^1.2.5",
     "@langchain/textsplitters": "^1.0.1",
     "kuromojin": "^3.0.1",
