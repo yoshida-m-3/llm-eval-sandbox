@@ -6,7 +6,7 @@
  * 2. 条件分岐グラフ — addConditionalEdges で動的ルーティング
  * 3. LLM統合グラフ — ChatOllama を組み込んだ品質チェック付きワークフロー
  *
- * 実行: pnpm graph:08
+ * 実行: pnpm graph:01
  */
 import {
   Annotation,
@@ -17,7 +17,7 @@ import {
 } from "@langchain/langgraph";
 import { HumanMessage } from "@langchain/core/messages";
 import type { AIMessage } from "@langchain/core/messages";
-import { llm } from "./rag/shared.js";
+import { llm } from "../rag/shared.js";
 
 // ============================================================
 // 1. 最小グラフ — START → greet → shout → END

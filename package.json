@@ -15,7 +15,10 @@
     "rag:09": "tsx src/rag/09-refine.ts",
     "trace:06": "tsx --env-file=.env src/06-langsmith-tracing.ts",
     "eval:07": "tsx --env-file=.env src/07-langsmith-eval.ts",
-    "graph:08": "tsx src/08-langgraph-basics.ts"
+    "graph:01": "tsx src/langgraph/01-basics.ts",
+    "graph:02": "tsx src/langgraph/02-supervisor.ts",
+    "graph:03": "tsx src/langgraph/03-handoff.ts",
+    "graph:04": "tsx src/langgraph/04-parallel.ts"
   },
   "keywords": [],
   "author": "",
