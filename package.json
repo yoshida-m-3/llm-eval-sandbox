@@ -9,7 +9,8 @@
     "rag:03": "tsx src/rag/03-parent-child.ts",
     "rag:04": "tsx src/rag/04-top-k.ts",
     "rag:05": "tsx src/rag/05-multi-query.ts",
-    "rag:06": "tsx src/rag/06-hybrid-search.ts"
+    "rag:06": "tsx src/rag/06-hybrid-search.ts",
+    "rag:07": "tsx src/rag/07-reranking.ts"
   },
   "keywords": [],
   "author": "",
