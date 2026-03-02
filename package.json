@@ -8,7 +8,8 @@
     "rag:02": "tsx src/rag/02-semantic-chunking.ts",
     "rag:03": "tsx src/rag/03-parent-child.ts",
     "rag:04": "tsx src/rag/04-top-k.ts",
-    "rag:05": "tsx src/rag/05-multi-query.ts"
+    "rag:05": "tsx src/rag/05-multi-query.ts",
+    "rag:06": "tsx src/rag/06-hybrid-search.ts"
   },
   "keywords": [],
   "author": "",
@@ -25,6 +26,7 @@
     "@langchain/core": "^1.1.29",
     "@langchain/ollama": "^1.2.5",
     "@langchain/textsplitters": "^1.0.1",
+    "kuromojin": "^3.0.1",
     "langchain": "^1.2.28",
     "semantic-chunking": "^2.4.4",
     "zod": "^4.3.6"
