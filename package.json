@@ -12,7 +12,9 @@
     "rag:06": "tsx src/rag/06-hybrid-search.ts",
     "rag:07": "tsx src/rag/07-reranking.ts",
     "rag:08": "tsx src/rag/08-map-reduce.ts",
-    "rag:09": "tsx src/rag/09-refine.ts"
+    "rag:09": "tsx src/rag/09-refine.ts",
+    "trace:06": "tsx --env-file=.env src/06-langsmith-tracing.ts",
+    "eval:07": "tsx --env-file=.env src/07-langsmith-eval.ts"
   },
   "keywords": [],
   "author": "",
@@ -31,6 +33,7 @@
     "@langchain/textsplitters": "^1.0.1",
     "kuromojin": "^3.0.1",
     "langchain": "^1.2.28",
+    "langsmith": "^0.5.7",
     "semantic-chunking": "^2.4.4",
     "zod": "^4.3.6"
   },
