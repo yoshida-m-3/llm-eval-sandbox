@@ -10,7 +10,8 @@
     "rag:04": "tsx src/rag/04-top-k.ts",
     "rag:05": "tsx src/rag/05-multi-query.ts",
     "rag:06": "tsx src/rag/06-hybrid-search.ts",
-    "rag:07": "tsx src/rag/07-reranking.ts"
+    "rag:07": "tsx src/rag/07-reranking.ts",
+    "rag:08": "tsx src/rag/08-map-reduce.ts"
   },
   "keywords": [],
   "author": "",
