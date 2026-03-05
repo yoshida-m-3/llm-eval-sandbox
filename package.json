@@ -18,7 +18,11 @@
     "graph:01": "tsx src/langgraph/01-basics.ts",
     "graph:02": "tsx src/langgraph/02-supervisor.ts",
     "graph:03": "tsx src/langgraph/03-handoff.ts",
-    "graph:04": "tsx src/langgraph/04-parallel.ts"
+    "graph:04": "tsx src/langgraph/04-parallel.ts",
+    "langflow:01": "tsx --env-file=.env src/langflow/01-setup.ts",
+    "langflow:02": "tsx --env-file=.env src/langflow/02-chat-flow.ts",
+    "langflow:03": "tsx --env-file=.env src/langflow/03-rag-flow.ts",
+    "langflow:04": "tsx --env-file=.env src/langflow/04-streaming.ts"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +34,7 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@datastax/langflow-client": "^0.4.1",
     "@langchain/classic": "^1.0.21",
     "@langchain/community": "^1.1.20",
     "@langchain/core": "^1.1.29",

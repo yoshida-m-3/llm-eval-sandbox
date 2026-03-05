@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@datastax/langflow-client':
+        specifier: ^0.4.1
+        version: 0.4.1
       '@langchain/classic':
         specifier: ^1.0.21
         version: 1.0.21(@langchain/core@1.1.29(openai@6.25.0(ws@8.19.0)(zod@4.3.6)))(cheerio@1.2.0)(openai@6.25.0(ws@8.19.0)(zod@4.3.6))(ws@8.19.0)
@@ -71,6 +74,9 @@ packages:
 
   '@cfworker/json-schema@4.1.1':
     resolution: {integrity: sha512-gAmrUZSGtKc3AiBL71iNWxDsyUC5uMaKKGdvzYsBoTW/xi42JQHl7eKV2OYzCUqvc+D2RCcf7EXY2iCyFIk6og==}
+
+  '@datastax/langflow-client@0.4.1':
+    resolution: {integrity: sha512-wgQt4TfaRgZWQTuaMocxW0KU+Dj8lo1JHP1h9Rtl1navwLFYxz0yolyFc50/o+5KuEXpRS9RlomV7jqo1FT/3Q==}
 
   '@emnapi/runtime@1.8.1':
     resolution: {integrity: sha512-mehfKSMWjjNol8659Z8KxEMrdSJDDot5SXMq00dM8BN4o+CLNXQ0xH2V7EchNHV4RmbZLmmPdEaXZc5H2FXmDg==}
@@ -1766,6 +1772,10 @@ snapshots:
       - utf-8-validate
 
   '@cfworker/json-schema@4.1.1': {}
+
+  '@datastax/langflow-client@0.4.1':
+    dependencies:
+      undici: 7.22.0
 
   '@emnapi/runtime@1.8.1':
     dependencies:

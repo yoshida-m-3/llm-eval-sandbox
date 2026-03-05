@@ -4,3 +4,6 @@ dist/
 *.log
 plans/
 models/
+langflow-venv/
+*.faiss
+*.pkl
