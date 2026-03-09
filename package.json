@@ -22,7 +22,9 @@
     "langflow:01": "tsx --env-file=.env src/langflow/01-setup.ts",
     "langflow:02": "tsx --env-file=.env src/langflow/02-chat-flow.ts",
     "langflow:03": "tsx --env-file=.env src/langflow/03-rag-flow.ts",
-    "langflow:04": "tsx --env-file=.env src/langflow/04-streaming.ts"
+    "langflow:04": "tsx --env-file=.env src/langflow/04-streaming.ts",
+    "langflow:05": "tsx --env-file=.env src/langflow/05-custom-component.ts",
+    "langflow:06": "tsx --env-file=.env src/langflow/06-comparison.ts"
   },
   "keywords": [],
   "author": "",
