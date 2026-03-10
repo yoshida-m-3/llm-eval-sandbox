@@ -1,7 +1,7 @@
 services:
   # OpenTelemetry Collector — アプリからの OTLP を受信し Tempo へ転送
   otel-collector:
-    image: otel/opentelemetry-collector:0.120.0
+    image: otel/opentelemetry-collector-contrib:0.116.0
     command: ["--config=/etc/otelcol/config.yaml"]
     volumes:
       - ./otel-collector-config.yaml:/etc/otelcol/config.yaml
